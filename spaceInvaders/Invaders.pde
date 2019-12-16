@@ -1,11 +1,8 @@
 class Invaders {
-  int numberOfInvaders;
-  PImage[] invaders;
+  public PImage image;
+  public PVector position;
   
-  Invaders(int n) {
-    numberOfInvaders = n;
-    invaders = new PImage[n];
-  }
-  
-  void show() {}
+  Invaders() {}
 }
+
+//class can be used to implement enemy bullets

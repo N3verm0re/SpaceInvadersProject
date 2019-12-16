@@ -5,7 +5,7 @@ class Spaceship {
 
   Spaceship() {
     rectMode(CENTER);
-    c = color(255);
+    c = color(#2BCB4A);
     shipW = 60;
     shipH = 20;
     posX = width/2;
