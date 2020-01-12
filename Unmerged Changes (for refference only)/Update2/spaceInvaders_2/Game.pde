@@ -1,5 +1,4 @@
 class Game {
-
   color bgcolor, c;
   int numStars;
   Invaders invaders;
@@ -11,7 +10,7 @@ class Game {
   Game() {
     bgcolor = color(10, 10, 100);
     barrier= new Barrier();
-    invaders = new Invaders(10);
+    //invaders = new Invaders(10);
     spaceship = new Spaceship();
     numStars = 500;
     c = color(10, 10, 100);
@@ -27,7 +26,7 @@ class Game {
     for (int i = 0; i < numStars; i++) {
       stars[i].show();
     }
-    //invader.show();
+    
     barrier.show(barlp);
     spaceship.show();
     

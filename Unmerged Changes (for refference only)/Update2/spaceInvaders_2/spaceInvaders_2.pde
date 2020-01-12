@@ -5,13 +5,6 @@ import ddf.minim.signals.*;
 import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 
-/*
-GAME
- |_ Invaders
- |_ Spaceship
- |_ Ammo
- */
-
 Minim minim;
 AudioPlayer tiro, hitw, st;
 
@@ -52,6 +45,7 @@ void keyPressed() {
     game.spaceship.move(d);
   }
 }
+
 void keyReleased() {
   if (key == 32) {
     game.spaceship.fire();

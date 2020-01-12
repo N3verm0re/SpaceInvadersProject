@@ -5,6 +5,7 @@ class Spaceship {
   boolean d=false;
   Bullet b;
   Barrier bar;
+  
   Spaceship() {
     bar=new Barrier();
     b=new Bullet(posX);
@@ -21,6 +22,7 @@ class Spaceship {
     noStroke();
     rect(posX, posY, shipW, shipH);
     rect(posX, posY-shipH, shipW-shipW/2, shipH);
+    
     if (d==true) {
       b.desenha();
       println(bar.x);
@@ -28,22 +30,27 @@ class Spaceship {
         println("colisao");
         println("recarregado");
         bar.dano();
+        
         d=false;
         b.i=height;
       }
     }
+    
     if (b.i<=0) {
       d=false;
       b.i=height;
       println("recarregado");
     }
   }
+  
   void move(int newPos) { 
     posX += newPos;
     println(posX);
+    
     if (posX>=width) {
       posX=width-20;
     }
+    
     if (posX<=0) {
       posX=20;
     }
