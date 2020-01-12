@@ -57,6 +57,8 @@ class Spaceship {
       d=true;
       println("bullet fired");
       b.x = posX;
+      tiro.play();
+      tiro.rewind();
     }
   }
 }

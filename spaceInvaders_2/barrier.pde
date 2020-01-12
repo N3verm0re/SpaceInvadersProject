@@ -14,6 +14,8 @@ class Barrier {
     lp=lp-10;
     c=color(0, 255, 0);
     println("diminui");
+    hitw.play();
+    hitw.rewind();
     //dá a mensagem que chega aqui mas não faz mudanças
   }
 }
