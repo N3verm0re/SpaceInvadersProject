@@ -25,20 +25,20 @@ void setup() {
   tiro= minim.loadFile("lasershot.mp3");
   hitw=minim.loadFile("Hitwall.wav");
   st=minim.loadFile("metroid.wav");
-  //tirar o reverb de um dos synths
   st.loop();
 }
 
 void draw() {
+  background(0, 10, 30);
   if (gs==true) {
     game.show();
   } else {
-    background(0, 10, 30);
+    
     textSize(32);
     fill(0, 102, 153, 204);
     text("press enter", 12, 45, -30);
     text("press enter", 12, 60);
-    text("Space Invaders", width/2, height/2);
+    text("Space Invaders", width/2-110, height/2);
   }
 }
 

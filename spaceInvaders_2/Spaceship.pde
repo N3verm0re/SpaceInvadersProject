@@ -28,8 +28,6 @@ class Spaceship {
         println("colisao");
         println("recarregado");
         bar.dano();
-        bar.c=color(0, 255, 0);
-
         d=false;
         b.i=height;
       }

@@ -3,17 +3,20 @@ class Barrier {
   color c;
   Barrier() {
     c=color(255);
-    lp=40;
   }
-  void show() {
+  void show(int p) {
+    lp=p;
     fill(c);
     noStroke();
-    rect(x, y, lp, lp);
+    rect(x, y, p, p);
   }
   void dano() {
-    lp=lp-10;
+    if (lp>0) {
+      lp=lp-10;
+    }
     c=color(0, 255, 0);
     println("diminui");
+    println(lp);
     hitw.play();
     hitw.rewind();
     //dá a mensagem que chega aqui mas não faz mudanças
